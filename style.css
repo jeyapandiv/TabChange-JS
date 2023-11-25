@@ -1,0 +1,110 @@
+:root {
+    --gradient : #cbe0e9;
+    --cold : #021425;
+    --blue : #4e6796;
+    --lightBlue : #8bb1f8;
+    --white : #ffffff;
+    --navy : #373d5c;
+}
+body {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    background-color: var(--gradient);
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#main-container #sub-container {
+    margin-top: 40px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+#sub-container #image {
+    width: 48.5%;
+    height: 250px;
+} 
+#sub-container #image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+#sub-container #card {
+    width: 48.5%;
+    height: 250px;    
+}
+#card #btns{
+    width: 100%;
+    /* background-color: brown; */
+}
+
+#card #btns::target-text{
+    color: green;
+}
+#card #btns .btn {
+    width: 33.33%;
+    border: none;
+    padding: 15px 0px;
+    margin : 0;
+}
+#card #btns #btn-one {
+    border-radius: 7px 0px 0px 0px;
+}
+#card #btns #btn-three {
+    border-radius: 0px 7px 0px 0px;
+}
+.btn:focus {
+    background-color: var(--white);
+}
+.btn:hover {
+    background-color: var(--lightBlue);
+    color: var(--white);
+}
+.hover_none{
+    pointer-events:none;
+}
+#card #content {
+    height: 205px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius:0px 0px 7px 7px;
+}
+.color_main {
+    color: var(--navy);
+}
+.color_sub {
+    color: var(--blue);
+}
+.font_size {
+    font-size: 14px;
+}
+.white_back {
+    background-color: var(--white);
+}
+.mr_none {
+    margin: 0;
+    padding-top: 10px;
+    position: relative;
+    width: 85%;
+    left: 30px;
+    top: 20px;
+    color: var(--blue);
+}
+
+
+#test {
+    width : 100px;
+}
+#test > button {
+    display: inline-block;
+    margin: 0;
+}
